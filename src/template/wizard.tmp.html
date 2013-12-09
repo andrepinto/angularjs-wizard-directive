@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul class="nav nav-pills">
+            <li ng-repeat="step in steps" class="wizard-steps">
+                <div id="talkbubble" class="{{step.hd.active}}" ng-click="clickStep(step.hd.index)">
+                    <div class='title'>
+                        <span class="nav-counter {{step.hd.active}}">{{step.hd.index+1}}</span>{{step.hd.name}}</div>
+                </div>
+            </li>
+        </ul>    
+        <div class="alert alert-danger" style="margin-top:10px" ng-show="showErrors">
+            <div ng-repeat="error in errors">{{error}}</div>
+        </div>
+        <div ng-transclude style="margin-top:10px;"></div>
+    </div>
+    <div class="panel-footer" style="min-height:50px!important;">
+        <button class="btn btn-sm btn-success" ng-click="stepAction(selectedItem.index-1)" ng-show="showPrev()">{{previous}}</button>
+        <button class="btn btn-sm btn-success pull-right" ng-click="stepAction(selectedItem.index+1)" ng-show="!lastStep">{{next}}</button>
+        <button class="btn btn-sm btn-success pull-right" ng-show="lastStep" ng-click="completeWizard()">{{end}}</button>
+    </div>
+</div>

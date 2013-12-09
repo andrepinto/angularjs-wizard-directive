@@ -1,0 +1,42 @@
+<div style="width:700px; margin:30px;" ng-controller="appController as vm">
+    <wizard config="wizard" on-validation-step="vm.validationStep" on-completed-wizard="vm.completeWizard" next="next" previous="previous" end="Finish">
+        <wizard-group title="Accout Data" active="true">
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input class="form-control" id="exampleInputEmail1" ng-model="vm.user.email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </form>
+        </wizard-group>
+        <wizard-group title="Profile">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </wizard-group>
+        <wizard-group title="Confirm"></wizard-group>
+        <wizard-group title="Finish"></wizard-group>
+    </wizard>
+</div>

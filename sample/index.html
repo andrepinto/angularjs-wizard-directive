@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+    <head>
+        <title>wizard</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href="styles/bootstrap.min.css" rel="stylesheet" />
+        <link href="styles/wizard.css" rel="stylesheet" />
+        
+        <style>
+            body{font-family:'Droid Sans',sans-serif !important;background-color:#f3f5f8;position:relative;margin:0px;font-size:12px;padding:0px}
+        </style>
+    </head>
+
+    <body>
+        
+      
+
+                <ng-view></ng-view>
+
+      
+        <script src="vendor/angular.js"></script>
+     <!--   <script src="vendor/angular-resource.min.js"></script>-->
+        <script src="vendor/angular-route.min.js"></script>
+        
+        <script src="scripts/app.js"></script>
+        <script src="scripts/widgets/widgets.js"></script>
+        <script src="scripts/route.config.js"></script>
+        <script src="scripts/widgets/wizard/wizard.ngmin.js"></script>
+        <script src="scripts/controllers/appController.js"></script>
+    </body>
+
+</html>  

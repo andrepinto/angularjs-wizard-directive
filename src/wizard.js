@@ -11,7 +11,7 @@ angular.module('widgets').directive('wizard', function () {
         restrict: 'E',
         replace: false,
         transclude: true,
-        templateUrl: "templates/wizard.tmp.html",
+        templateUrl: "views/wizard.tmp.html",
         scope: {
             onValidationStep: "&",
             onCompletedWizard: "&",

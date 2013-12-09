@@ -1,0 +1,14 @@
+{
+  "name": "angular-wizard-example",
+  "version": "0.1.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "bootstrap": "~3.0.0"
+  }
+}
