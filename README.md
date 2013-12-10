@@ -1,7 +1,15 @@
 angularjs-wizard-directive
 ==========================
 
-angularjs wizard directive
+###Run
+
+```javascript
+ node sample/web-server.js
+```
+
+```javascript
+ localhost:8000/index.html/#wizard
+```
 
 
 ![ScreenShot](https://raw.github.com/andrepinto/angularjs-wizard-directive/master/screenshots/im1.png)
